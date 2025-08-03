@@ -1,0 +1,340 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #000, #500, #000);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 3px solid #c00;
+    box-shadow: 0 4px 12px rgba(200, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-link {
+    display: inline-block;
+    background-color: #c00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.instagram-link:hover {
+    background-color: #a00;
+    transform: translateY(-2px);
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+}
+
+.search-title {
+    color: #c00;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.search-button {
+    background-color: #c00;
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    height: 35px;
+}
+
+.search-button:hover {
+    background-color: #a00;
+}
+
+/* Maddahs Section */
+.maddahs-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: #c00;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-right: 4px solid #c00;
+    padding-right: 0.8rem;
+}
+
+.maddahs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.maddah-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.maddah-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(200, 0, 0, 0.3);
+}
+
+.maddah-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #c00;
+}
+
+.maddah-info {
+    padding: 1rem;
+}
+
+.maddah-name {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.maddah-count {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    background: linear-gradient(to right, #000, #500, #000);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c00;
+}
+
+.modal-title {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.nawhas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.nawha-card {
+    background-color: #333;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nawha-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.nawha-info {
+    padding: 1rem;
+}
+
+.nawha-title {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.nawha-code {
+    color: #c00;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #c00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #a00;
+}
+
+/* Search Results */
+.search-results {
+    display: none;
+    margin-top: 2rem;
+}
+
+.result-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #c00;
+}
+
+.result-title {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.result-maddah {
+    color: #aaa;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.result-code {
+    color: #c00;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #000, #500, #000);
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 3px solid #c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .maddahs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .nawhas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .maddahs-grid {
+        grid-template-columns: 1fr;
+    }
+}

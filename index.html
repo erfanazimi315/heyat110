@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هیئت 110</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">هیئت 110</div>
+        <div>مرجع مداحی های محرم</div>
+        <a href="https://www.instagram.com/hey_at110" class="instagram-link" target="_blank">اینستاگرام هیئت 110</a>
+    </header>
+
+    <div class="container">
+        <section class="search-section">
+            <h2 class="search-title">جستجوی مداحی</h2>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="کد مداحی را وارد کنید (مثال: 1 یا 500)...">
+                <button class="search-button">جستجو</button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Results will be shown here -->
+            </div>
+        </section>
+
+        <section class="maddahs-section">
+            <h2 class="section-title">مداحان</h2>
+            <div class="maddahs-grid" id="maddahsGrid">
+                <!-- Maddahs will be loaded here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for showing maddah's nawhas -->
+    <div class="modal" id="maddahModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">مداحی ها</h3>
+                <button class="close-button" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Nawhas will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>تمامی حقوق برای هیئت 110 محفوظ است © 1404</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

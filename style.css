@@ -310,6 +310,16 @@ footer {
     border-top: 3px solid #c00;
 }
 
+.blue-tick {
+    width: 16px;
+    /* اندازه تصویر تیک */
+    height: 16px;
+    vertical-align: middle;
+    /* برای همتراز شدن با متن */
+    margin-right: 5px;
+    /* فاصله از اسم */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .logo {

@@ -1,9 +1,24 @@
 // Sample data for maddahs and their nawhas with audio URLs
 const maddahsData = [
+
+    {
+        id: 2,
+        name: "احسان لطفی",
+        image: "./img/2.jpg",
+        hasBlueTick: true, 
+        nawhas: [
+            {
+                id: 2,
+                title: "منم سگ دربار امام حسین - بود آن چه در",
+                audioUrl: "./audio/2/heyat110-2-1.mp3"
+            },
+        ]
+    },
     {
         id: 1,
         name: "متفرقه",
         image: "./img/1.jpg",
+        hasBlueTick: false,
         nawhas: [
             {
                 id: 1,
@@ -53,10 +68,16 @@ function loadMaddahs() {
     maddahsData.forEach(maddah => {
         const maddahCard = document.createElement('div');
         maddahCard.className = 'maddah-card';
+
+        // اگر مداح تیک آبی داشته باشد، تصویر blue.jpg را نمایش بده
+        const blueTick = maddah.hasBlueTick
+            ? '<img src="./img/blue.jpg" alt="تیک آبی" class="blue-tick">'
+            : '';
+
         maddahCard.innerHTML = `
             <img src="${maddah.image}" alt="${maddah.name}" class="maddah-image">
             <div class="maddah-info">
-                <h3 class="maddah-name">${maddah.name}</h3>
+                <h3 class="maddah-name">${maddah.name} ${blueTick}</h3>
                 <p class="maddah-count">${maddah.nawhas.length} مداحی</p>
             </div>
         `;

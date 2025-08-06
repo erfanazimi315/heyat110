@@ -2,10 +2,29 @@
 const maddahsData = [
 
     {
+        id: 3,
+        name: "مرتضی یبرنژاد",
+        image: "./img/3.jpg",
+        hasBlueTick: true, // این مداح تیک آبی دارد
+        nawhas: [
+            {
+                id: 3,
+                title: "دلم امانت باشه تو امانات حرم",
+                audioUrl: "./audio/3/heyat110-3-1.mp3"
+            },
+            {
+                id: 4,
+                title: "العجل العجل",
+                audioUrl: "./audio/3/heyat110-3-2.mp3"
+            },
+
+        ]
+    },
+    {
         id: 2,
         name: "احسان لطفی",
         image: "./img/2.jpg",
-        hasBlueTick: true, 
+        hasBlueTick: true, // این مداح تیک آبی دارد
         nawhas: [
             {
                 id: 2,
@@ -18,7 +37,7 @@ const maddahsData = [
         id: 1,
         name: "متفرقه",
         image: "./img/1.jpg",
-        hasBlueTick: false,
+        hasBlueTick: false, // این مداح تیک آبی ندارد
         nawhas: [
             {
                 id: 1,

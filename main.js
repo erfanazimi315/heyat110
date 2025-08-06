@@ -5,7 +5,7 @@ const maddahsData = [
         id: 3,
         name: "مرتضی یبرنژاد",
         image: "./img/3.jpg",
-        hasBlueTick: true, // این مداح تیک آبی دارد
+        hasBlueTick: true, 
         nawhas: [
             {
                 id: 3,
@@ -24,7 +24,7 @@ const maddahsData = [
         id: 2,
         name: "احسان لطفی",
         image: "./img/2.jpg",
-        hasBlueTick: true, // این مداح تیک آبی دارد
+        hasBlueTick: true, 
         nawhas: [
             {
                 id: 2,
@@ -37,7 +37,7 @@ const maddahsData = [
         id: 1,
         name: "متفرقه",
         image: "./img/1.jpg",
-        hasBlueTick: false, // این مداح تیک آبی ندارد
+        hasBlueTick: false, 
         nawhas: [
             {
                 id: 1,
@@ -194,3 +194,4 @@ function searchNawha() {
 
     searchResults.style.display = 'block';
 }
+

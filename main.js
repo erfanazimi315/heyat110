@@ -2,10 +2,22 @@
 const maddahsData = [
 
     {
+        id: 4,
+        name: "حامد امامی",
+        image: "./img/4.jpg",
+        nawhas: [
+            {
+                id: 5,
+                title: "عمری ها بسوزن اقام علیه",
+                audioUrl: "./audio/4/heyat110-4-1.mp3"
+            },
+        ]
+    },
+    {
         id: 3,
         name: "مرتضی یبرنژاد",
         image: "./img/3.jpg",
-        hasBlueTick: true, 
+        hasBlueTick: true, // این مداح تیک آبی دارد
         nawhas: [
             {
                 id: 3,
@@ -24,7 +36,7 @@ const maddahsData = [
         id: 2,
         name: "احسان لطفی",
         image: "./img/2.jpg",
-        hasBlueTick: true, 
+        hasBlueTick: true, // این مداح تیک آبی دارد
         nawhas: [
             {
                 id: 2,
@@ -37,7 +49,7 @@ const maddahsData = [
         id: 1,
         name: "متفرقه",
         image: "./img/1.jpg",
-        hasBlueTick: false, 
+        hasBlueTick: false, // این مداح تیک آبی ندارد
         nawhas: [
             {
                 id: 1,
@@ -194,4 +206,3 @@ function searchNawha() {
 
     searchResults.style.display = 'block';
 }
-

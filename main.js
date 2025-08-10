@@ -2,6 +2,19 @@
 const maddahsData = [
 
     {
+        id: 5,
+        name: "علی پناهی",
+        image: "./img/5.jpg",
+        hasBlueTick: true,
+        nawhas: [
+            {
+                id: 7,
+                title: "بود و نبودم",
+                audioUrl: "./audio/5/heyat110-5-1.mp3"
+            },
+        ]
+    },
+    {
         id: 4,
         name: "حامد امامی",
         image: "./img/4.jpg",
@@ -28,6 +41,11 @@ const maddahsData = [
                 id: 4,
                 title: "العجل العجل",
                 audioUrl: "./audio/3/heyat110-3-2.mp3"
+            },
+            {
+                id: 6,
+                title: "شاهزاده علی اکبر",
+                audioUrl: "./audio/3/heyat110-3-3.mp3"
             },
 
         ]
